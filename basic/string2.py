@@ -7,7 +7,7 @@
 # http://code.google.com/edu/languages/google-python-class/
 
 # Additional basic string exercises
-
+import math
 # D. verbing
 # Given a string, if its length is at least 3,
 # add 'ing' to its end.
@@ -55,13 +55,15 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-     a-front = a[:len(a)/2+1]
-     a-back =  a[len(a)/2+1:]
-     b-front = b[:len(b)/2+1]
-     b-back = b[len(b)/2+1:]
+  output_b = 0
+  output_b = 0
+  output = ""
+  afront = ""
+  output_a = math.ceil(len(a)/2.0)
+  output_b = math.ceil(len(b)/2.0)
+  afront = a[:output_a]
   
-     output = a-front
-  return output
+  return afront
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
