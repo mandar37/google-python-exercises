@@ -61,9 +61,12 @@ def front_back(a, b):
   afront = ""
   output_a = math.ceil(len(a)/2.0)
   output_b = math.ceil(len(b)/2.0)
-  afront = a[:output_a]
-  
-  return afront
+  afront = a[:int(output_a)]
+  aback  = a[int(output_a):] 
+  bfront = b[:int(output_b)]
+  bback = b[int(output_b):]
+
+  return afront + bfront + aback + bback
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
